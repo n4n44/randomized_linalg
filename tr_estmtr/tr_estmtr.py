@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def sampling(A,sample_size=30):# 標本からtrace estimatorを計算
+    dim = A.shape[0]
     x = []
     w = np.random.standard_normal((sample_size,dim))
     for i in range(1,sample_size):
